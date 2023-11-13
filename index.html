@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@icon/themify-icons@1.0.1-alpha.3/themify-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>E-Commerce Website Using Bootstap 5</title>
+
+
+
+</head>
+
+<body>
+
+  <!-- Navigation section -->
+  <section id="header">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="ti-align-justify navbar-toggler-icon"></span>
+
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#CLOTHS">Products</a>
+              <div class="sub-menu">
+                <ul class="nav">
+                  <li><a class="nav-link" href="#CLOTHS">Cloths</a></li>
+                  <li><a class="nav-link" href="#BAGS">Bags</a></li>
+                  <li><a class="nav-link" href="#JEWELRY">Jewelry</a></li>
+                  <li><a class="nav-link" href="#SHOES">Shoes</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#OFFER">Special</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <i class='bx bx-shopping-bag' id="cart-icon"></i>
+
+              <!-- cart -->
+              <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+
+
+                <div class="cart-content">
+                   
+
+                </div>
+
+
+                <div class="total">
+                  <div class="total-title">Total</div>
+                  <div class="total-price">₹0</div>
+                </div>
+
+                <button type="button" class="btn-buy btn btn-danger">Buy Now</button>
+                
+                <i class='bx bx-x' id="cart-close"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+
+  <!-- Home section -->
+  <section id="home" class="home pt-5 overflow-hidden" class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="home-banner home-banner-1">
+            <div class="home-banner-text">
+              <h1>Women</h1>
+              <h2>52% Discount For This Season</h2>
+              <a href="#CLOTHS" class="btn btn-danger text-uppercase mt-4">Our Products</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="home-banner home-banner-2">
+            <div class="home-banner-text">
+              <h1>E-Shop</h1>
+              <h2>With Working Card & Pay Pal</h2>
+              <a href="#CLOTHS" class="btn btn-danger text-uppercase mt-4">Our Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Offer section -->
+    <div class="offers container row">
+
+      <!-- Offer Box One -->
+      <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
+        <a href="#">
+          <div class="offer-box text-center position-relative">
+
+            <div class="offer-image position-relative overflow-hidden">
+              <img src="./images/offer1.jpg" alt="Offers" class="img-fluid">
+              <div class="offer-overlay"></div>
+            </div>
+            <div class="offer-info">
+
+              <p class="heading-bigger text-capitalize">Sale 30%</p>
+              <p class="offer-title-1 text-uppercase font-weight-bold">Don't Miss This Chance</p>
+              <button type="button" class="btn btn-outline-danger text-uppercase mt-4">Shop Now</button>
+
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- offer Box Two -->
+      <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4 d-flex flex-column justify-content-between">
+        <a href="#">
+          <div class="offer-box text-center position-relative mb-4 mb-sm-0 mb-lg-0">
+
+            <div class="offer-image position-relative overflow-hidden">
+              <img src="./images/offer2.jpg" alt="Offers" class="img-fluid">
+              <div class="offer-overlay"></div>
+            </div>
+            <div class="offer-info">
+
+              <p class="heading-bigger text-capitalize">Sale 70%</p>
+              <p class="offer-title-1 text-uppercase font-weight-bold">Don't Miss This Chance</p>
+              <button type="button" class="btn btn-outline-danger text-uppercase mt-4">Shop Now</button>
+
+            </div>
+
+          </div>
+        </a>
+        <a href="#">
+          <div class="offer-box text-center position-relative">
+
+            <div class="offer-image position-relative overflow-hidden">
+              <img src="./images/offer3.jpg" alt="Offers" class="img-fluid">
+              <div class="offer-overlay"></div>
+            </div>
+            <div class="offer-info">
+
+              <p class="heading-bigger text-capitalize">Sale 50%</p>
+              <p class="offer-title-1 text-uppercase font-weight-bold">Don't Miss This Chance</p>
+              <button type="button" class="btn btn-outline-danger text-uppercase mt-4">Shop Now</button>
+
+            </div>
+
+          </div>
+        </a>
+      </div>
+
+      <!-- offer Box Three -->
+      <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
+        <a href="#">
+          <div class="offer-box text-center position-relative">
+
+            <div class="offer-image position-relative overflow-hidden">
+              <img decoding="async" src="./images/offer4.jpg" alt="Offers" class="img-fluid">
+              <div class="offer-overlay"></div>
+            </div>
+            <div class="offer-info">
+
+              <p class="heading-bigger text-capitalize">Sale 25%</p>
+              <p class="offer-title-1 text-uppercase font-weight-bold">Don't Miss This Chance</p>
+              <button type="button" class="btn btn-outline-danger text-uppercase mt-4">Shop Now</button>
+
+            </div>
+
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Products section -->
+  <section id="CLOTHS" class="products">
+    <div class="container">
+      <div class="headline text-center row col-sm-12 mb-5">
+        <h2 class="pb-3 position-relative d-inline-block">CLOTHS</h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <span class="sale">Sale</span>
+            <img src="./images/p2.jpg" alt="products" class="img-fluid product-image-first">
+            <img src="./images/p21.jpg" alt="products" class="img-fluid product-image-secondary">
+          
+            <h3 class="text-capitalize">Winter Long Sleeve Black White</h3>
+            <p class="mb-0 amount" >₹420.00 <del>₹670.00</del></p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <img src="./images/p1.jpg" alt="products" class="img-fluid product-image-first">
+            <img src="./images/p11.jpg" alt="products" class="img-fluid product-image-secondary">
+            <h3 class="text-capitalize">women totes lady handbag</h3>
+            <p class="mb-0 amount">₹520.00</p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <img src="./images/p3.jpg" alt="products" class="img-fluid product-image-first">
+            <img src="./images/p31.jpg" alt="products" class="img-fluid product-image-secondary">
+      
+            <h3 class="text-capitalize">Lace water soluble sexy dress</h3>
+            <p class="mb-0 amount">₹600.00</p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <img  src="./images/p3.jpg" alt="products" class="img-fluid product-image-first">
+            <img  src="./images/p31.jpg" alt="products" class="img-fluid product-image-secondary">
+         
+            <h3 class="text-capitalize">Elegant Formal Party Dress</h3>
+            <p class="mb-0 amount">₹500.00</p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+
+
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <span class="sale">Sale</span>
+            <img  src="./images/p4.jpg" alt="products" class="img-fluid product-image-first">
+            <img  src="./images/p41.jpg" alt="products" class="img-fluid product-image-secondary">
+         
+            <h3 class="text-capitalize">Mini Dress Ladies Sleeve</h3>
+            <p class="mb-0 amount">₹600.00</p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <img  src="./images/p1.jpg" alt="products" class="img-fluid product-image-first">
+            <img  src="./images/p11.jpg" alt="products" class="img-fluid product-image-secondary">
+          
+            <h3 class="text-capitalize">Winter Long Sleeve Black White </h3>
+            <p class="mb-0 amount">₹500.00</p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- BAGS -->
+  <section id="BAGS" class="products">
+    <div class="container">
+      <div class="row col-sm-12">
+
+        <div class="headline text-center mb-5">
+          <h2 class="pb-3 position-relative d-inline-block">BAGS</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <span class="sale">Sale</span>
+            <img  src="./images/b1.jpg" alt="products" class="img-fluid product-image-first">
+            <img  src="./images/b11.jpg" alt="products" class="img-fluid product-image-secondary">
+         
+            <h3 class="text-capitalize">Simen Black Leopard Strap Crossbody Bag</h3>
+            <p class="mb-0 amount">₹400.00 <del>₹580.00</del></p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <img src="./images/b2.jpg" alt="products" class="img-fluid product-image-first">
+            <img  src="./images/b21.jpg" alt="products" class="img-fluid product-image-secondary">
+          
+            <h3 class="text-capitalize">Simen Gold Crossbody Bag Small
+            </h3>
+            <p class="mb-0 amount">₹300.00</p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+
+        </div>
+
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <img  src="./images/b3.jpg" alt="products" class="img-fluid product-image-first">
+            <img  src="./images/b31.jpg" alt="products" class="img-fluid product-image-secondary">
+          
+            <h3 class="text-capitalize">Monochrome Stripe Black Belt Bag</h3>
+            <p class="mb-0 amount">₹600.00</p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <img  src="./images/b2.jpg" alt="products" class="img-fluid product-image-first">
+            <img  src="./images/b21.jpg" alt="products" class="img-fluid product-image-secondary">
+          
+            <h3 class="text-capitalize">Simen Gold Crossbody Bag Small
+            </h3>
+            <p class="mb-0 amount">₹300.00</p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <span class="sale">Sale</span>
+            <img  src="./images/b1.jpg" alt="products" class="img-fluid product-image-first">
+            <img  src="./images/b11.jpg" alt="products" class="img-fluid product-image-secondary">
+        
+            <h3 class="text-capitalize">Simen Black Leopard Strap Crossbody Bag</h3>
+            <p class="mb-0 amount">₹400.00</p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <img  src="./images/b2.jpg" alt="products" class="img-fluid product-image-first">
+            <img  src="./images/b21.jpg" alt="products" class="img-fluid product-image-secondary">
+         
+            <h3 class="text-capitalize">Simen Gold Crossbody Bag Small
+            </h3>
+            <p class="mb-0 amount">₹300.00</p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- JEWELRY -->
+  <section id="JEWELRY" class="products">
+    <div class="container">
+      <div class="row col-sm-12">
+
+        <div class="headline text-center mb-5">
+          <h2 class="pb-3 position-relative d-inline-block">JEWELRY</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <span class="sale">Sale</span>
+            <img  src="./images/j1.jpg" alt="products" class="img-fluid product-image-first">
+            <img  src="./images/j11.jpg" alt="products" class="img-fluid product-image-secondary">
+            <h3 class="text-capitalize">Rosalind Chain, Freshwater Pearl & Bar Layered Necklace</h3>
+            <p class="mb-0 amount">₹1400.00 <del>₹1580.00</del></p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <img src="./images/j2.jpg" alt="products" class="img-fluid product-image-first">
+            <img  src="./images/j21.jpg" alt="products" class="img-fluid product-image-secondary">
+         
+            <h3 class="text-capitalize">Bianca Flower Detail Pink Engraved Bangle</h3>
+            <p class="mb-0 amount">₹1300.00</p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <img  src="./images/j3.jpg" alt="products" class="img-fluid product-image-first">
+            <img src="./images/j31.jpg" alt="products" class="img-fluid product-image-secondary">
+         
+            <h3 class="text-capitalize">Nou Freshwater Pearl Gold Plated Hoop Earrings</h3>
+            <p class="mb-0 amount">₹900.00</p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <img  src="./images/j4.jpg" alt="products" class="img-fluid product-image-first">
+            <img  src="./images/j41.jpg" alt="products" class="img-fluid product-image-secondary">
+          
+            <h3 class="text-capitalize">Margaret Molten Texture Gold Plated Cuff Bracelet</h3>
+            <p class="mb-0 amount">₹1300.00</p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <span class="sale">Sale</span>
+            <img  src="./images/j5.jpg" alt="products" class="img-fluid product-image-first">
+            <img d src="./images/j51.jpg" alt="products" class="img-fluid product-image-secondary">
+          
+            <h3 class="text-capitalize">Haru Engraved Star Charm Gold Plated Hoop Earrings</h3>
+            <p class="mb-0 amount">₹1100.00</p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <img  src="./images/j6.jpg" alt="products" class="img-fluid product-image-first">
+            <img  src="./images/j61.jpg" alt="products" class="img-fluid product-image-secondary">
+          
+            <h3 class="text-capitalize">May Textured Triple Row Layered Pendant Necklace </h3>
+            <p class="mb-0 amount">₹1500.00</p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- SHOES -->
+  <section id="SHOES" class="products">
+    <div class="container">
+      <div class="row col-sm-12">
+
+        <div class="headline text-center mb-5">
+          <h2 class="pb-3 position-relative d-inline-block">SHOES</h2>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <span class="sale">Sale</span>
+            <img  src="./images/s1.jpg" alt="products" class="img-fluid product-image-first">
+            <img  src="./images/s11.jpg" alt="products" class="img-fluid product-image-secondary">
+          
+            <h3 class="text-capitalize">Western Off White Leather Heeled Boots</h3>
+            <p class="mb-0 amount">₹400.00 <del>₹580.00</del></p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <img  src="./images/s2.jpg" alt="products" class="img-fluid product-image-first">
+            <img  src="./images/s22.jpg" alt="products" class="img-fluid product-image-secondary">
+         
+            <h3 class="text-capitalize">Mary Jane Double Buckle Golden Leather Shoes</h3>
+            <p class="mb-0 amount">₹300.00</p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <img  src="./images/s3.jpg" alt="products" class="img-fluid product-image-first">
+            <img  src="./images/s31.jpg" alt="products" class="img-fluid product-image-secondary">
+          
+            <h3 class="text-capitalize">Blue Metallic Leather Heeled Sandals</h3>
+            <p class="mb-0 amount">₹600.00</p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <img  src="./images/s4.jpg" alt="products" class="img-fluid product-image-first">
+            <img  src="./images/s41.jpg" alt="products" class="img-fluid product-image-secondary">
+          
+            <h3 class="text-capitalize">Mary Jane Double Buckle Silver Leather Shoes</h3>
+            <p class="mb-0 amount">₹500.00</p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <span class="sale">Sale</span>
+            <img  src="./images/s3.jpg" alt="products" class="img-fluid product-image-first">
+            <img  src="./images/s31.jpg" alt="products" class="img-fluid product-image-secondary">
+         
+            <h3 class="text-capitalize">Blue Metallic Leather Heeled Sandals</h3>
+            <p class="mb-0 amount">₹600.00</p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-lg-4 d-block text-center mb-4 product-list">
+
+          <div class="product-image position-relative product-name pt-3">
+            <img  src="./images/s1.jpg" alt="products" class="img-fluid product-image-first">
+            <img  src="./images/s11.jpg" alt="products" class="img-fluid product-image-secondary">
+        
+            <h3 class="text-capitalize">Western Off White Leather Heeled Boots</h3>
+            <p class="mb-0 amount">₹500.00</p>
+            <button type="button" class="btn add_to_Card">ADD TO CARD</button>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Special section -->
+  <section id="OFFER" >
+    <div class="special container row">
+
+
+      <div class="headline text-center mb-5 col-sm-12">
+        <h2 class="pb-3 position-relative d-inline-block">SPECIAL OFFER</h2>
+
+      </div>
+
+      <div class="col-sm-12 col-lg-7 text-center text-lg-start countdown-container">
+
+        <h2 class="text-uppercase">women totes lady handbag</h2>
+        <p class="my-4">The women's totes lady handbag is a stylish and versatile accessory that complements any outfit.
+          <br>Crafted with high-quality materials and exquisite craftsmanship, it offers ample space to carry your
+          essentials. </p>
+        <ul class="list-unstyled countdown-counter">
+          <li><span class="fs-1 d-block" id="days">00</span> Days</li>
+          <li><span class="fs-1 d-block" id="hours">00</span> Hr</li>
+          <li><span class="fs-1 d-block" id="min">00</span> Min</li>
+          <li><span class="fs-1 d-block" id="sec">00</span> Sec</li>
+        </ul>
+        <span class="countdown-price h3 d-block mb-4">₹420.00 <del>₹670.00</del></span>
+        <button type="button" class="btn btn-danger">ADD TO CART</button>
+        
+
+      </div>
+      <div class="col-sm-12 col-lg-5 special-img position-relative">
+
+        <span class="">Sale</span>
+        <img src="./images/p7.jpg" class="img-fluid">
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Testimonial section -->
+  <section id="testimonial" class="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="headline text-center mb-5">
+            <h2 class="pb-3 position-relative d-inline-block">Testimonials</h2>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-8 offset-lg-2 text-center">
+          <div id="carouselExampleIndicatorsTwo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicatorsTwo" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicatorsTwo" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="testimonial-wrapper">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <img src="./images/user.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="username">
+                      <h3> Sophie, Nurse</h3>
+                      <p> "As a busy nurse, I need practical and stylish clothing. This website offers both. I've found
+                        comfortable scrubs, casual wear, and accessories that suit my on-the-go lifestyle. It's a real
+                        lifesaver!" </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial-wrapper">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <img src="./images/user2.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="username">
+                      <h3>Olivia, Software Engineer</h3>
+                      <p> "I appreciate the modern styles available here. It's great for both work and casual wear. The
+                        shoes are comfortable for my long hours at the desk, and the bags are trendy and functional."
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsTwo"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true">
+                <span class="ti-angle-left slider-icon"></span>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsTwo"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true">
+                <span class="ti-angle-right slider-icon"></span>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact">
+    <div class="contact">
+      <div class="container">
+        <div class="mb-5 text-center">
+          <h5>Let’s Start a Conversation!</h5>
+          <h2 class="fw-bold">Contact Us</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-5 col-md-5">
+            <h4 class="fw-bold">Contact Info</h4>
+            <ul class="info list-unstyled">
+              <li class="d-flex align-items-center">
+                <span class="pe-3 ti-location-pin fs-5"></span>
+                <p> <b>Email:</b> contact@yourwebsite.com</p>
+              </li>
+              <li class="d-flex align-items-center">
+                <span class="pe-3 ti-mobile fs-5"></span>
+                <p><b>Phone: </b> +91 7809560954</p>
+              </li>
+              <li class="d-flex align-items-center">
+                <span class="pe-3 ti-envelope fs-5"></span>
+                <p><b>Address: </b> LPU, Jalandhar</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-7 col-md-7 pt-lg-0 pt-md-0 pt-4">
+            <form>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email address">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input class="textarea" name="message" cols="30" rows="4" id="message"
+                      placeholder="Enter your message">
+                  </div>
+                </div>
+                <div class="col-md-12" id="mybtn">
+                  <button class="btn btn-danger" class="ti-rocket pe-2 fs-5"> Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer section -->
+  <footer>
+    <div class="p-3 copyright">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6 p-1 p-lg-3 text-center text-lg-start">
+            <p class="my-0">Copyright © 2023 <a href="#">E-SHOP</a> All Rights Reserved</p>
+          </div>
+          <div class="col-12 col-lg-6 p-1 p-lg-3 text-center text-lg-end">
+            <p>Designed by <a href="#" target=" _blank">Tauqueer Alam</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
